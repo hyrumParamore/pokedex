@@ -91,7 +91,7 @@ function populatePokemon() {
 
             const other_image = pokemon.sprites.other.dream_world.front_default;
             const pokemon_image = pokemon.sprites.other["official-artwork"].front_default;
-            console.log(pokemon.sprites)
+            // console.log(pokemon.sprites)
             
             //Check if the image is null and use another image.
             if (pokemon_image != null) {

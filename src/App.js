@@ -1,5 +1,4 @@
 
-import pikachuImg from './images/Pikachu.webp'
 import './App.css';
 // import './populate';
 import populatePokemon from './populate';
@@ -10,9 +9,9 @@ function App() {
     <header>
       {/* Search box */}
         <div className="top-container">
-            <h1>PokéDex</h1>
+            <h1>- Pokémon Card Creator -</h1>
 
-            <b className="text-muted">Is your Pokémon in the Codex? <br></br></b>
+            <b className="text-muted">Search a Pokémon to create a custom card! <br></br></b>
 
             <div className="search-container">
               <input type="text"  id="search_q" placeholder="Search Pokémon"/>
@@ -29,11 +28,11 @@ function App() {
         <div className="header">
             <p className="title">Basic Pokémon</p>
             <b><p id="update-name">Pikachu</p></b>
-            <b><p className="hp"><span id="update-hp">HP 100</span></p></b>
+            <b><p className="hp"><span id="update-hp">HP 35</span></p></b>
         </div>
         
         <div className="image-box">
-            <img id="update-img" src={pikachuImg} alt="Pokemon" srcset=""/>
+            <img id="update-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pokemon" srcset=""/>
         </div>
 
         <div className="abilities">
