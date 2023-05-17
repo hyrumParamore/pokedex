@@ -46,9 +46,9 @@ I currently only have one web page for this but am looking to add more when I ha
 * [FreeCodeCamp](https://www.freecodecamp.org/news/install-react-with-create-react-app/)
 * [W3Schools for Javascript](https://www.w3schools.com/js/default.asp)
 * [W3Schools for React](https://www.w3schools.com/react/default.asp)
-* [Background for the Website](https://wallpapersafari.com/w/jJD5dA) Don't know who the original artist is, but this is where I found the image I used.
+* [Background for the Website](https://wallpapersafari.com/w/jJD5dA). I am not sure who the original artist is, but this is where I found the image I used.
 * The other image that is in the background of the card I got from here: [pokemon oras battle background](https://www.deviantart.com/jenske05/art/pokemon-oras-battle-background-509465798) with credit to Jenske05.
-* All of the other images come from the PokeAPI.
+* All of the other images come from PokeAPI.
 
 # Future Work
 
