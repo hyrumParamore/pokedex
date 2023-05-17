@@ -1,17 +1,15 @@
 
+// Populates the cards with the correct data from the Pokemon API.
 function populatePokemon() {
     
-
         const search_result = document.getElementById('search_q');
         const search_term = search_result;
-        console.log(search_term.value.toLowerCase());
+        // console.log(search_term.value.toLowerCase());
 
         const search_btn = document.getElementById('search-btn');
-        
         const element = document.getElementById("card-background");
 
-
-        // Capitalize the first letter of the sentence.
+        // Capitalize the first letter of the sentence for the pokemon name on the card.
         function capitalizeFirstLetter(string) {
             return string.charAt(0).toUpperCase() + string.slice(1);
         }
@@ -24,16 +22,12 @@ function populatePokemon() {
             const response = await fetch(url)
 
             const pokemon = await response.json()
-            // console.log(pokemon);
-            // console.log(pokemon.types[0].type.name)
             
             const type = pokemon.types[0].type.name;
             changeCardColor();
-            // const element = document.getElementById("cardBackground");
 
 
-            // const element = document.getElementById("myElement");
-
+            // Checks for the pokemon element type and changes the card background to match.
             function changeCardColor() {
                 if (type == "fire"){
                     console.log(type + "!");
@@ -80,34 +74,32 @@ function populatePokemon() {
                 }else {
                     console.log(type + "!");
                     element.style.backgroundColor = "rgb(211, 211, 211)";
-                };
-                
+                };  
             }
 
-
-            // Fairy f15191
-            // Dark 104e6f
-            // Metal 94a8bb
-            // Leaf 73be06
-            // Fighting e3620e
-            // Electric fbec00
-            // Water 00b0eb
-            // Fire fa480c
-            // Psychic a0358a
+            // Pokemon Element Types and Colors.
+                // Fairy f15191
+                // Dark 104e6f
+                // Metal 94a8bb
+                // Leaf 73be06
+                // Fighting e3620e
+                // Electric fbec00
+                // Water 00b0eb
+                // Fire fa480c
+                // Psychic a0358a
 
 
             const other_image = pokemon.sprites.other.dream_world.front_default;
             const pokemon_image = pokemon.sprites.other["official-artwork"].front_default;
             console.log(pokemon.sprites)
             
-            //Check if the image is null and use another image
+            //Check if the image is null and use another image.
             if (pokemon_image != null) {
                 document.getElementById('update-img').setAttribute('src', pokemon_image)
             } else {
                 document.getElementById('update-img').setAttribute('src', other_image)
             }
             
-
             // Update card with data.
             // document.getElementById('update-img').setAttribute('src', pokemon.sprites.other.dream_world.front_default)
             document.getElementById('update-name').innerHTML = capitalizeFirstLetter(pokemon.name);
@@ -121,17 +113,13 @@ function populatePokemon() {
 
         }
 
-        
         // search_btn.addEventListener('click', () => getPokemonData(search_term.value));
         var event = getPokemonData(search_term.value.toLowerCase());
         search_term.addEventListener('keypress', (event) => {
             if (event.keyCode === 13) {
-                // The Enter key was pressed
-                // event.preventDefault();
                 search_btn.click();
             }
         }); 
-
 }
 
 export default populatePokemon;
