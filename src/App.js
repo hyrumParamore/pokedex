@@ -4,6 +4,7 @@ import './App.css';
 import populatePokemon from './populate';
 
 function App() {
+
   return (
     <body>
     <header>
@@ -32,7 +33,7 @@ function App() {
         </div>
         
         <div className="image-box">
-            <img id="update-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pokemon" srcset=""/>
+            <img className="bounce" id="update-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pokemon" srcset=""/>
         </div>
 
         <div className="abilities">

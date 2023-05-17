@@ -19,6 +19,8 @@ The purpose for writing this software was more of a challenge for myself to see 
 # Web Pages
 
 <!-- {Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.} -->
+I currently only have one web page for this but am looking to add more when I have more time available. As of now, this project doesn't really require more than a single page to run correctly, but again, I am looking to add more in the future.
+
 
 # Development Environment
 
