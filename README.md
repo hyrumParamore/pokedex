@@ -54,5 +54,5 @@ I currently only have one web page for this but am looking to add more when I ha
 
 <!-- {Make a list of things that you need to fix, improve, and add in the future.} -->
 * Make it printable.
-* Add more cards and be able to create a deck.
+* Add more cards and be able to create different decks.
 * Make the cards more customizable and work better with the different abilities and moves that each Pokémon has.

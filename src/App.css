@@ -148,7 +148,7 @@ hr {
 
 /* Bounce animation for the image */
 .bounce {
-  animation: bounce 4s;
+  animation: bounce 4.5s;
   animation-iteration-count: infinite;
 }
 
