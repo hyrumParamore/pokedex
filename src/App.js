@@ -1,6 +1,5 @@
 
 import './App.css';
-// import './populate';
 import populatePokemon from './populate';
 
 function App() {
